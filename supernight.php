@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: SuperNight
- * Plugin URI: http://wordpress.org/plugins/hello-dolly/
+ * Plugin URI: https://github.com/jirentaicho/SuperNightPlugin
  * Description: 夜のお店のテーマを拡張するプラグインです。
  * Author: ジレン特攻隊長
  * Version: 1.0.0
- * Author URI: http://ma.tt/
+ * Author URI: https://volkruss.com/
  * 
  * @package JirenSuperNigth
  */

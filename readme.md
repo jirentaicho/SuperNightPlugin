@@ -13,7 +13,7 @@
 
 # Help
 
-URL:
+URL:https://github.com/jirentaicho/SuperNightPlugin
 
 
 # singleページの作成
@@ -21,6 +21,11 @@ URL:
 キャストのプロフィールページを作成するには、singleページを作成してください。
 キャストの情報は全てカスタムフィールドにて作成します。
 キャストのキャスタむフィールド情報はAPIから取得できます。
+
+必要となるsingleページ
+
+* single-cast.php
+* single-mailpost.php
 
 
 # Postieとの連携
@@ -74,6 +79,19 @@ getAllMailPost()
 
 getMailPostByMail($email)
 
+getCastEmail($id)
+
+getCastField($id)
+
+getMailPostById($id)
+
+getScheduleById($id)
+
+getScheduleKey($id)
+
+getScheduleString($index,$from,$to)
+
+superNightApiTest()
 
 # キャストカスタムフィールドについて
 
