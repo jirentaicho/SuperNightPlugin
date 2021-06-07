@@ -1,0 +1,47 @@
+.my-success{
+    display: block;
+    width:80%;
+    padding:10px 3px;
+    background:green;
+    color:white;
+}
+
+.my-danger{
+    display: block;
+    width:80%;
+    padding: 10px 3px;
+    background:red;
+    color:white;
+}
+
+#super-night-loading{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    background:rgba(0,0,0,.8);
+    color:whitesmoke;
+}
+#super-night-loading p{
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    margin: auto;
+    width:200px;
+    height:200px;
+}
+
+.super-night-close{
+    display: none;
+}
+
+.save-button{
+    border:none;
+    padding:8px 15x;
+    cursor: pointer;
+    background:dodgerblue;
+    color:whitesmoke;
+}
