@@ -20,7 +20,7 @@ URL:https://github.com/jirentaicho/SuperNightPlugin
 
 キャストのプロフィールページを作成するには、singleページを作成してください。
 キャストの情報は全てカスタムフィールドにて作成します。
-キャストのキャスタむフィールド情報はAPIから取得できます。
+キャストのカスタムフィールド情報はAPIから取得できます。
 
 必要となるsingleページ
 
@@ -48,9 +48,10 @@ APIを利用してテーマを拡張します。
 APIのインスタンスがglobalの$super_night_apiに登録されています。
 
 APIを利用したいファイルで以下を実行することでAPIの実行テストが行えます。
-
+~~~
 global $super_night_api;
 $super_night_api->superNightApiTest();
+~~~
 
 ## API
 
@@ -66,15 +67,16 @@ $super_night_api->superNightApiTest();
 ### 使用例
 
 #### 画像を表示する
-
+~~~
 global $super_night_api;
 $fields = $super_night_api->getCastField($post_obj->ID);
 var_dump($fields);
 echo '<div id="main_image_preview">' . wp_get_attachment_image($fields['image'], 'small') . '</div>';
-
+~~~
 
 # API一覧
 
+~~~
 getAllMailPost()
 
 getMailPostByMail($email)
@@ -92,15 +94,15 @@ getScheduleKey($id)
 getScheduleString($index,$from,$to)
 
 superNightApiTest()
+~~~
 
 # キャストカスタムフィールドについて
 
+~~~
     $cast_name = get_post_meta($id, 'cast_name', true); 
     $cast_age = get_post_meta($id,'cast_age', true);
     $cast_isnew = get_post_meta($id,'cast_isnew', true); // newの場合は"1"
     $cast_email = get_post_meta($id, 'cast_email', true);
     $cast_image = get_post_meta($id, 'main_image', true);
     $cast_schedule = get_post_meta($id, 'myschedule', true); // Array
-
-
-
+~~~
