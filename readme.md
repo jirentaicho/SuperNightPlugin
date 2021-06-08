@@ -123,3 +123,9 @@ superNightApiTest()
     $cast_image = get_post_meta($id, 'main_image', true);
     $cast_schedule = get_post_meta($id, 'myschedule', true); // Array
 ~~~
+
+
+## 作者
+
+Twitter : https://twitter.com/keisukesiratori
+ブログ : https://volkruss.com/
