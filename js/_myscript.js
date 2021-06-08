@@ -21,7 +21,6 @@ function saveData(data){
     [ ... inputs].forEach(input => param.append(input.name,input.value) )
     param.append("action", 'register_ajax_data')
     param.append("nonce", ex_values.nonce)
-    param.append("unko","chinko");
 
     fetch(ex_values.admin_url,{
         method : 'POST',
