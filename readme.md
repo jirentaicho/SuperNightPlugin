@@ -74,6 +74,23 @@ var_dump($fields);
 echo '<div id="main_image_preview">' . wp_get_attachment_image($fields['image'], 'small') . '</div>';
 ~~~
 
+### メール投稿記事一覧を表示する
+
+
+~~~
+global $super_night_api;
+$result = $super_night_api->getAllMailPost();
+
+foreach ( $result as $post ){
+    echo '<P>';
+    $url = get_permalink($post->ID);
+    echo '<a href="' . $url . '"> ' . $post->post_title . '</a>';
+    echo '</P>';
+}
+~~~
+
+
+
 # API一覧
 
 ~~~
