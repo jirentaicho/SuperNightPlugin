@@ -32,7 +32,7 @@ class MyAddSchedulePage{
             'custom_myschedule_page',
             array($this,'custom_myschedule_page'),
             'dashicons-admin-generic',
-            6);
+            99);
     }
 
     public function custom_myschedule_page(){
