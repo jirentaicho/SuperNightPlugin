@@ -155,7 +155,7 @@ class AddCastCustomField{
     function add_js_file($hook_suffix){
         global $post_type;
         if($post_type == 'cast' && in_array($hook_suffix,array('post.php','post-new.php'))){
-            wp_enqueue_script('imageloader-script',plugins_url() . '/my-first-plugin/js/imageloader.js');
+            wp_enqueue_script('imageloader-script',plugins_url() . '/super-night-plugin/js/imageloader.js');
         }
     }
 

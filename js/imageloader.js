@@ -20,7 +20,7 @@ function selectImage(inputid,previewid){
 
     frame.on('select', function() {
 
-        let image = frame.state().get('selection').first().toJSON(); 
+        var image = frame.state().get('selection').first().toJSON(); 
 
         document.getElementById(inputid).value = image.id;
 

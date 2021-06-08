@@ -40,9 +40,8 @@ class MyAddSchedulePage{
     }
 
     public function my_admin_script() {
-        wp_enqueue_script('underscore-esm-min',plugins_url() . '/my-first-plugin/js/underscore-esm-min.js');
-        wp_enqueue_script('myscript',plugins_url() . '/my-first-plugin/js/myscript.js');
-        wp_enqueue_style('mystyle', plugins_url() . '/my-first-plugin/css/mystyle.css');
+        wp_enqueue_script('myscript',plugins_url() . '/super-night-plugin/js/myscript.js');
+        wp_enqueue_style('mystyle', plugins_url() . '/super-night-plugin/css/mystyle.css');
         //JavaScriptに渡す値の設定
         // args : [0]=handle [1]=name [2]=values
         wp_localize_script('myscript', 'ex_values', array(
